@@ -6,3 +6,6 @@ The program enable simple search for pattern in a given input text. It performed
 * `slist.c`<br/>
 This file represent a implementation of a simple generic single linked list.(the headers appears in <b>slist.h</b>).
 The methods of linked list(init, append.. etc) apply to construct the FSM(Finite-state machine) that composed of set of spesific words.
+
+* `pattern-matching.c`<br/>
+This file represent the main algoritm, that matches multiple patterns simultaneously, by first constructing a Deterministic Finite Automaton (DFA) representing the patterns set, and then, with this DFA on its disposal, processing the text in a single pass. (total o(n) efficiency).(the headers appears in <b>pattern-matching.h</b>).
