@@ -9,3 +9,17 @@ The methods of linked list(init, append.. etc) apply to construct the FSM(Finite
 
 * `pattern-matching.c`<br/>
 This file represent the main algoritm, that matches multiple patterns simultaneously, by first constructing a Deterministic Finite Automaton (DFA) representing the patterns set, and then, with this DFA on its disposal, processing the text in a single pass. (total o(n) efficiency).(the headers appears in <b>pattern-matching.h</b>).
+
+## How use files?
+
+Write a program (main.c) that executes the following commands:<br/>
+(the functions appears in <b>pattern-matching.c</b>)
+
+* Allocate memory for the pm variable ( struct pm pm_t ).
+* Use the init function to init pm ( int pm_init(pm_t *) ).
+* Add strings to the FSM ( int pm_addstring(pm_t *,unsigned char *, size_t n) ).
+* Complete construction the FSM ( int pm_makeFSM(pm_t *) ).
+* Search the whole appearance of strings in some input text ( slist_t* pm_fsm_search(pm_state_t *,unsigned char *,size_t) ).
+* Do something with the list of the matches...
+* Destroy pm ( void pm_destroy(pm_t *) ).
+* Free the allocated pm pointer ( by free() function ).
