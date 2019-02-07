@@ -272,6 +272,8 @@ void pm_destroy(pm_t* fsm)
 	free(queue);
 	queue = NULL; 	 
 }
+
+// private functions
 void destroy_state(pm_state_t* state)
 {
 	slist_destroy(state->output, SLIST_LEAVE_DATA);//free the output list of current state
