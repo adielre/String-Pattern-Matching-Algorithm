@@ -4,4 +4,5 @@ The program enable simple search for pattern in a given input text. It performed
 
 ## Files
 * `slist.c`<br/>
-This file represent a implementation of a simple single linked list.(the headers appears in <b>slist.h</b>).
+This file represent a implementation of a simple generic single linked list.(the headers appears in <b>slist.h</b>).
+The methods of linked list(init, append.. etc) apply to construct the FSM(Finite-state machine) that composed of set of spesific words.
